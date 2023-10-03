@@ -10,7 +10,7 @@
     </thead>
     <tbody>
       <?php
-while ($gym = $gym->fetch_assoc()) {
+while ($gym = $gyms->fetch_assoc()) {
 ?>
 <tr>
   <td><?php echo $fighter['gym_ID']; ?></td>
