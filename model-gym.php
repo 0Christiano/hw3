@@ -1,5 +1,5 @@
 <?php
-function gym() {
+function selectgyms() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT gym_ID, gym_name, gym_description FROM `gym`");
