@@ -4,7 +4,7 @@ require_once("model-fighter.php");
 
 $pageTitle = "Fighter";
 include "view-header.php";
-$fighters = selectfighters();
+$fighter = selectfighter();
 include "view-fighter.php";
       include "view-footer.php";
 ?>
