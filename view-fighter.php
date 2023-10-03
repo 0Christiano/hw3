@@ -13,8 +13,8 @@
 while ($fighter = $fighters->fetch_assoc()) {
 ?>
 <tr>
-  <td><?php echo $fighter['figher_ID']; ?></td>
-  <td><?php echo $fighter['figher_name']; ?></td>
+  <td><?php echo $fighter['fighter_ID']; ?></td>
+  <td><?php echo $fighter['fighter_name']; ?></td>
   <td><?php echo $fighter['weight']; ?></td>
 </tr>
       <?php
