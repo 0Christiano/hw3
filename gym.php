@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("model-fighter.php");
+require_once("model-gym.php");
 
 $pageTitle = "gym";
 include "view-header.php";
