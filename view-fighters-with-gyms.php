@@ -9,7 +9,7 @@ while ($fighter = $fighters->fetch_assoc()) {
       <p class="card-text">    
       <ul class="list-group">
   <?php
-$Gym = selectGymsbyfighter($fighter['fighter_ID']);
+$gym = selectGymsbyfighter($fighter['fighter_ID']);
   while ($gym = $gyms->fetch_assoc()) {
     ?>
         <li class="list-group-item"><?php echo $gym['gym_name']; ?> - <?php echo $gym['gym_description']; ?> - <?php echo $gym['style']; ?> - <?php echo $gym['origin']; ?></li>
