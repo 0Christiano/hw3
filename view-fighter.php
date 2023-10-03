@@ -6,6 +6,7 @@
           <th>ID</th>
       <th>Name</th>
       <th>Weight</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -16,6 +17,7 @@ while ($fighter = $fighters->fetch_assoc()) {
   <td><?php echo $fighter['fighter_ID']; ?></td>
   <td><?php echo $fighter['fighter_name']; ?></td>
   <td><?php echo $fighter['weight']; ?></td>
+  <td><a href="gyms-by-fighter.php?id=<?php echo $fighter['fighter_ID']; ?>">Gyms</a></td>
 </tr>
       <?php
 }
