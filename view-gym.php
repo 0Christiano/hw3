@@ -13,9 +13,9 @@
 while ($gym = $gyms->fetch_assoc()) {
 ?>
 <tr>
-  <td><?php echo $fighter['gym_ID']; ?></td>
-  <td><?php echo $fighter['gym_name']; ?></td>
-  <td><?php echo $fighter['gym_description']; ?></td>
+  <td><?php echo $gym['gym_ID']; ?></td>
+  <td><?php echo $gym['gym_name']; ?></td>
+  <td><?php echo $gym['gym_description']; ?></td>
 </tr>
       <?php
 }
