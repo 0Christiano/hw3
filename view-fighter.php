@@ -10,7 +10,7 @@
     </thead>
     <tbody>
       <?php
-while ($fighter = $fighter->fetch_assoc()) {
+while ($fighter = $fighters->fetch_assoc()) {
 ?>
 <tr>
   <td><?php echo $fighter['figher_ID']; ?></td>
