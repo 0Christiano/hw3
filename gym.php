@@ -4,7 +4,7 @@ require_once("model-gym.php");
 
 $pageTitle = "gym";
 include "view-header.php";
-$gym = selectgym();
+$gyms = selectgyms();
 include "view-gym.php";
       include "view-footer.php";
 ?>
