@@ -1,4 +1,4 @@
-</php
+<?php
 function selectfighter() {
     try {
         $conn = get_db_connection();
