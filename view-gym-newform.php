@@ -24,6 +24,7 @@
             <label for="gDesc" class="form-label">Gym description</label>
             <input type="text" class="form-control" id="gDesc" name="gDesc">
           </div>
+         <input type="hidden" name="actionType" value = "Add">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
       </div>
