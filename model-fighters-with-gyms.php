@@ -41,7 +41,7 @@ function insertMArt($gid, $fid, $style, $origin) {
     }
 }
 
-function updateMArt$gid, $fid, $style, $origin, $mid) {
+function updateMArt($gid, $fid, $style, $origin, $mid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `MArt` set `gym_ID` = ?, `fighter_ID` = ?, 'origin' = ?, 'MArt_ID' =? where gym_ID = ?");
