@@ -14,7 +14,14 @@ if (isset($_POST['actionType'])) {
            echo '<div class="alert alert-danger" role="alert"> Error</div>';
          }
         break;
-   case "Delete" :
+    case "Edit" :
+         if (updateGym($_POST['gNumber'], $_POST['gDesc'], $_POST['gid'])) {
+           echo '<div class="alert alert-success" role="alert"> Gym edited</div>';
+         } else {
+           echo '<div class="alert alert-danger" role="alert"> Error</div>';
+         }
+        break;
+    case "Delete" :
          if (deleteGym($_POST['gid'])) {
            echo '<div class="alert alert-success" role="alert"> Gym deleted</div>';
          } else{
