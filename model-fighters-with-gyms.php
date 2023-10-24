@@ -66,4 +66,5 @@ function deleteMArt($mid) {
         $conn->close();
         throw $e;
     }
+    }
 ?>
