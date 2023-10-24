@@ -30,7 +30,7 @@ function insertgym($gName, $gDesc) {
 function updategym($gName, $gDesc, $gid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `gym` set (`gym_name` = ?, `gym_description` = ? where gym_ID = ?");
+        $stmt = $conn->prepare("update `gym` set `gym_name` = ?, `gym_description` = ? where gym_ID = ?");
         $stmt->bind_param("ssi", $gName, $gDesc, $gid);
         $success = $stmt->execute();
         $conn->close();
