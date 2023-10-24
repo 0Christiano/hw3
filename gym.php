@@ -9,14 +9,14 @@ if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
         case "Add" :
          if (insertGym($_POST['gNumber'], $_POST['gDesc'])) {
-           echo '<div class="alert alert-success" role="alert"> Gym added</div>"';
+           echo '<div class="alert alert-success" role="alert"> Gym added</div>';
          } else {
            echo '<div class="alert alert-danger" role="alert"> Error</div>';
          }
         break;
    case "Delete" :
          if (deleteGym($_POST['gid'])) {
-           echo '<div class="alert alert-success" role="alert"> Gym deleted</div>"';
+           echo '<div class="alert alert-success" role="alert"> Gym deleted</div>';
          } else{
            echo '<div class="alert alert-danger" role="alert"> Error</div>';
          }
