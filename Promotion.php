@@ -31,7 +31,7 @@ if (isset($_POST['actionType'])) {
   }
 }
 
-$fighters = selectPromotion();
+$Promotion = selectPromotion();
 include "view-promotion.php";
       include "view-footer.php";
 ?>
