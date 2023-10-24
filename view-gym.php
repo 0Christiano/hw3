@@ -29,6 +29,10 @@ while ($gym = $gyms->fetch_assoc()) {
   <td><?php echo $gym['gym_name']; ?></td>
   <td><?php echo $gym['gym_description']; ?></td>
   <td>
+<?php
+include "view-gym-editform.php";
+?>
+  
   </td>
   <td>
      <form method="post" action="">
