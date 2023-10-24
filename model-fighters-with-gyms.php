@@ -27,4 +27,43 @@ function selectgymsbyfighter($fid) {
         throw $e;
     }
 }
+function insertMArt($gid, $fid, $style, $origin) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `MArt` (`gym_ID`, `fighter_ID`, 'style', origin') VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("iiss", $gid, $fid, $style, $origin);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function updateMArt$gid, $fid, $style, $origin, $mid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("update `MArt` set `gym_ID` = ?, `fighter_ID` = ?, 'origin' = ?, 'MArt_ID' =? where gym_ID = ?");
+        $stmt->bind_param("ssi", $gName, $gDesc, $gid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+function deleteMArt($mid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("delete from MArt where MArt_ID = ?");
+        $stmt->bind_param("i", $mid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
 ?>
