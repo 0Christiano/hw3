@@ -30,7 +30,7 @@ function insertBrand($bName) {
 function updateBrand($bName, $bid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `brand` set `brand_name` = ?, where brand_ID = ?");
+        $stmt = $conn->prepare("update `brand` set `brand_name` = ? where brand_ID = ?");
         $stmt->bind_param("si", $bName, $bid);
         $success = $stmt->execute();
         $conn->close();
