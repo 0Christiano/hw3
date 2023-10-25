@@ -2,7 +2,7 @@
 function selectPromotion() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT promotion_ID, promotion_name FROM `promotion`");
+        $stmt = $conn->prepare("SELECT promotion_ID, promotion_name FROM Promotion");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
