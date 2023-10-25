@@ -18,7 +18,7 @@
         <form method="post" action="">
           <div class="mb-3">
             <label for="gNumber<?php echo $gym['gym_ID']; ?>" class="form-label">Gym number</label>
-            <input type="text" class="form-control" id="gNumber<?php echo $gym['gym_ID']; ?>" name="gNumber" value="<?php echo $gym['gym_number']; ?>">
+            <input type="text" class="form-control" id="gNumber<?php echo $gym['gym_ID']; ?>" name="gNumber" value="<?php echo $gym['gym_name']; ?>">
           </div>
           <div class="mb-3">
             <label for="gDesc<?php echo $gym['gym_ID']; ?>" class="form-label">Gym description</label>
