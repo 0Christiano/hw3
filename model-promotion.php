@@ -30,7 +30,7 @@ function insertPromotion($pName) {
 function updatePromotion($pName, $pid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `promotion` set `promotion_name` = ?, where promotion_ID = ?");
+        $stmt = $conn->prepare("update `Promotion` set `promotion_name` = ? where promotion_ID = ?");
         $stmt->bind_param("si", $pName, $pid);
         $success = $stmt->execute();
         $conn->close();
