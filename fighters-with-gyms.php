@@ -34,7 +34,7 @@ if (isset($_POST['actionType'])) {
 }
 
 
-$MArts = selectMArts();
+$MArt = selectMArts();
 include "view-fighters-with-gyms.php";
       include "view-footer.php";
 ?>
