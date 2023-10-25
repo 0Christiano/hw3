@@ -23,6 +23,9 @@
           <a class="nav-link" href="Promotion.php">promotion</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="Brand.php">brand</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="fighter.php">fighter</a>
         </li>
           <li class="nav-item">
