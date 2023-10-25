@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("Promotion.php");
+require_once("model-promotion.php");
 
 $pageTitle = "promotion";
 include "view-header.php";
