@@ -18,11 +18,11 @@
         <form method="post" action="">
           <div class="mb-3">
             <label for="fNumber<?php echo $fighter['fighter_ID']; ?>" class="form-label">Fighter number</label>
-            <input type="text" class="form-control" id="fNumber<?php echo $fighter['fighter_ID']; ?>" name="fNumber" value="<?php echo $fighter['fighter_number']; ?>">
+            <input type="text" class="form-control" id="fNumber<?php echo $fighter['fighter_ID']; ?>" name="fNumber" value="<?php echo $fighter['fighter_name']; ?>">
           </div>
           <div class="mb-3">
             <label for="fWeight<?php echo $fighter['fighter_ID']; ?>" class="form-label">Fighter weight</label>
-            <input type="text" class="form-control" id="fWeight<?php echo $fighter['fighter_ID']; ?>" name="fWeight" value="<?php echo $fighter['fighter_description']; ?>">
+            <input type="text" class="form-control" id="fWeight<?php echo $fighter['fighter_ID']; ?>" name="fWeight" value="<?php echo $fighter['weight']; ?>">
           </div>
             <input type="hidden"  name="fid" value="<?php echo $fighter['fighter_ID']; ?>">
          <input type="hidden" name="actionType" value = "Edit">
