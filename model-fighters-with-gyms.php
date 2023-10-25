@@ -30,7 +30,7 @@ function selectgymsbyfighter($fid) {
 function insertMArt($gid, $fid, $style, $origin) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `MArt` (`gym_ID`, `fighter_ID`, 'style', origin') VALUES (?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO `MArt` (gym_ID, fighter_ID, style, origin) VALUES (?, ?, ?, ?)");
         $stmt->bind_param("iiss", $gid, $fid, $style, $origin);
         $success = $stmt->execute();
         $conn->close();
