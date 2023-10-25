@@ -25,7 +25,7 @@ while ($Promotion = $Promotions->fetch_assoc()) {
 ?>
 <tr>
   <td><?php echo $Promotion['promotion_ID']; ?></td>
-  <td><?php echo $gym['promotion_name']; ?></td>
+  <td><?php echo $Promotion['promotion_name']; ?></td>
   <td>
 <?php
 include "view-promotion-editform.php";
