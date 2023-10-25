@@ -32,6 +32,6 @@ if (isset($_POST['actionType'])) {
 }
 
 $Brands = selectBrands();
-include "view-Brand.php";
+include "view-brand.php";
       include "view-footer.php";
 ?>
