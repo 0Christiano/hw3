@@ -17,7 +17,7 @@ function insertBrand($bName) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `Brand` (`brand_name`) VALUES (?)");
-        $stmt->bind_param("s", $pName);
+        $stmt->bind_param("s", $bName);
         $success = $stmt->execute();
         $conn->close();
         return $success;
